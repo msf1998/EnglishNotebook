@@ -21,10 +21,28 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="EnglishNoteBookApplication.py" />
-    <Compile Include="test.py">
+    <Compile Include="utill\db.py" />
+    <Compile Include="utill\excel.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="model\word.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="insertwords\insert.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EnglishNoteBookApplication.py" />
+    <Compile Include="insertwords\testaddword.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="dbconfig.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="insertwords\" />
+    <Folder Include="model\" />
+    <Folder Include="utill\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

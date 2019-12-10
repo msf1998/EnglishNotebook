@@ -1,0 +1,10 @@
+<config>
+  <dbinfo>
+    <host>127.0.0.1</host>
+    <port>3306</port>
+    <db>englishnotebookdb</db>
+    <user>root</user>
+    <passwd>123456</passwd>
+    <charset>utf8</charset>
+  </dbinfo>
+</config>

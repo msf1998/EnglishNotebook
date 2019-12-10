@@ -1,3 +1,4 @@
-import test
-x = test.test("hello world")
-print(x)
+from insertwords.insert import InsertDB
+path = input("请输入路径：\n")
+ins = InsertDB()
+ins.addwords(path)
