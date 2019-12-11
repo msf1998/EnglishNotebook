@@ -33,4 +33,6 @@ class InsertDB:
             result = -1
         cur.close()
         return result
+    def __del__(self):
+        self.__con.close()
 
