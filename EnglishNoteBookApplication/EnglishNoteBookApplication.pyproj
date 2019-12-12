@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>ba660696-65d8-4d8c-929c-37d226947795</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>deletewords\testdeleteaword.py</StartupFile>
+    <StartupFile>EnglishNoteBookApplication.pyw</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -48,9 +48,6 @@
     <Compile Include="updatewords\update.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="updateword\class1.py">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="utill\db.py" />
     <Compile Include="utill\excel.py">
       <SubType>Code</SubType>
@@ -61,8 +58,14 @@
     <Compile Include="insertwords\insert.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="EnglishNoteBookApplication.py" />
+    <Compile Include="EnglishNoteBookApplication.pyw" />
     <Compile Include="insertwords\testaddword.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="windows\indexwindow.pyw">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="windows\mainwindow.pyw">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -73,9 +76,9 @@
     <Folder Include="insertwords\" />
     <Folder Include="model\" />
     <Folder Include="deletewords\" />
+    <Folder Include="windows\" />
     <Folder Include="updatewords\" />
     <Folder Include="selectwords\" />
-    <Folder Include="updateword\" />
     <Folder Include="utill\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />

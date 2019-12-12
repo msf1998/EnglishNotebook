@@ -1,3 +1,4 @@
-2019/12/10 18:20	开发插入单词模块，利用load data SQL语句向mysql中批量导入数据时，使用？或者%s占位符都显示path转换错误	不得已采用了字符串的拼接	半解决
+2019/12/10 18:20	开发插入单词模块，利用load data SQL语句向mysql中批量导入数据时，使用？或者%s占位符都显示path转换错误	不得已采用了字符串的拼接（基础不牢啊！execute接受的第二个参数必须是一个可迭代对象，我单纯的用括号括起来一个参数是不能构成元组的，"(path,)"这样写才是元组，“(path)”这样写还是个字符串）	半解决
 2019/12/11 23:00	无法删除在mysql中创建的触发器，每次使用drop trigger命令删除时都会卡住	不得已利用navicat对原有的触发器做出了修改	半解决
 2019/12/11 23:00	删除words表中的“mfs”单词时触发触发器再把删除的数据添加回表中以达到不能删除该数据的目的。没想到mysql报错1442 - Can't update table 'words' in stored function/trigger because it is already used by statement which invoked this stored function/trigger.	原来这样可能会造成循环触发，所以已被mysql禁止这样的操作。不过就算这样也同样达到了我不允许删除数据的目的	已解决
+2019/12/12 23:00	使用tkinter的quit方法关闭当前窗口使出现窗口卡死的情况，改用sys的exit也是如此。	最后在创建窗口的程序后调用destory方法后问题得以解决	已解决
